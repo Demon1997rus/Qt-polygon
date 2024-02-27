@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose Release or Debug" FORCE)
+endif()
+
 project(Qt-polygon)
 
 set(CMAKE_AUTOMOC ON)
