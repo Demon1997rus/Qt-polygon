@@ -5,19 +5,17 @@
 #include <QByteArray>
 #include <QDataStream>
 
-QString searchConfig(const QString& name)
-{
-    const QString configPath = QString(ROOT_PATH "data/%1").arg(name);
-    return configPath;
-}
+#include <zmq.h>
 
-QByteArray dataConfig(const QString& path)
+inline QString searchConfig(const QString& name) { return QString(ROOT_PATH "data/%1").arg(name); }
+
+QByteArray configData(const QString& configPath)
 {
-    QFile file(path);
+    QFile file(configPath);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         qCritical() << Q_FUNC_INFO;
-        qCritical() << "File opening failed" << path;
+        qCritical() << "File opening failed" << configPath;
         return QByteArray();
     }
     return file.readAll();
@@ -26,5 +24,6 @@ QByteArray dataConfig(const QString& path)
 int main(int argc, char* argv[])
 {
     QCoreApplication app(argc, argv);
-    return app.exec();
+
+    return 0;
 }
