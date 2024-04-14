@@ -1,5 +1,7 @@
 # My object
 build
+ 
+lib
 
 # C++ objects and libs
 *.slo
