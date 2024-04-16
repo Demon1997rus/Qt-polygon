@@ -24,6 +24,7 @@ QByteArray configData(const QString& configPath)
 int main(int argc, char* argv[])
 {
     QCoreApplication app(argc, argv);
+    zmq_msg_t msg;
 
     return 0;
 }
