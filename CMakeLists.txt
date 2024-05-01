@@ -9,7 +9,6 @@ project(${FILE_NAME})
 include(cmake-helper/cmake-helper.cmake)
 
 use_qt5()
-use_zmq()
 
 add_subdirectory(src)
 
