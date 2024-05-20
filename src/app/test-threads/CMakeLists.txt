@@ -1,3 +1,3 @@
-set(TARGET test-zmq)
+set(TARGET test-threads)
 
 qt_add_executable(${TARGET})
