@@ -1,4 +1,4 @@
-add_subdirectory(lib)
+add_subdirectory(my-lib-qt)
 add_subdirectory(test)
 add_subdirectory(zmq-divide-and-dominate)
 add_subdirectory(zmq-request-reply)
