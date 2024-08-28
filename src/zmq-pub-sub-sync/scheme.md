@@ -1,0 +1,1 @@
+![](../../data/pub-sub-sync.png)

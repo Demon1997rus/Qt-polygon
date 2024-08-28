@@ -1,0 +1,3 @@
+add_subdirectory(publisher)
+add_subdirectory(subscriber)
+add_subdirectory(weather)

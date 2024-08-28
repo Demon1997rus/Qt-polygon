@@ -1,0 +1,1 @@
+![](../../data/zmq-divide-and-dominate.png)

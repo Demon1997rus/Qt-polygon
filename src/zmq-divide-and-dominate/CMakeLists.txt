@@ -1,0 +1,5 @@
+add_subdirectory(serverd)
+add_subdirectory(workerd)
+add_subdirectory(collectord)
+add_subdirectory(workerdcopy)
+add_subdirectory(workerdcopycopy)
